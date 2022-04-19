@@ -6,8 +6,11 @@ You can use this project as an example for how to incorporate Crowd Control into
 
 ### Prerequisites
 .NET Framework 3.5 (https://www.microsoft.com/en-us/download/details.aspx?id=21)
+
 Melon Loader (https://github.com/LavaGang/MelonLoader)
+
 Melon Loader Crowd Control Plugin (https://github.com/LavaGang/MelonLoader)
+
 Visual Studio 2017 or later
 
 ### Installation
