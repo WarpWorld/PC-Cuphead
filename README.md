@@ -15,6 +15,7 @@ Visual Studio 2017 or later
 
 ## Installation
 Extract the project locally and open it with your preferred Visual Studio version, if newer than 2017 you may have to upgrade the solution
+
 Install Melon Loader and the Crowd Control plugin to the Steam Cuphead directory, using the Mono version of the plugin
 
 ## Usage
