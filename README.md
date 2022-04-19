@@ -4,7 +4,7 @@ This project shows off the work of importing Crowd Control into an already relea
 
 You can use this project as an example for how to incorporate Crowd Control into any other Unity based games.
 
-### Prerequisites
+## Prerequisites
 .NET Framework 3.5 (https://www.microsoft.com/en-us/download/details.aspx?id=21)
 
 Melon Loader (https://github.com/LavaGang/MelonLoader)
@@ -13,7 +13,7 @@ Melon Loader Crowd Control Plugin (https://github.com/LavaGang/MelonLoader)
 
 Visual Studio 2017 or later
 
-### Installation
+## Installation
 Extract the project locally and open it with your preferred Visual Studio version, if newer than 2017 you may have to upgrade the solution
 Install Melon Loader and the Crowd Control plugin to the Steam Cuphead directory, using the Mono version of the plugin
 
