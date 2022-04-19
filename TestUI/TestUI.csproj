@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+	<TargetFrameworks>net35;net40;net472</TargetFrameworks>
+	<RootNamespace>TestUI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+	
+	<FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+	<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+	
+	<DefineConstants Condition="'$(TargetFramework)' == 'net35'">NET35</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net40'">NET40</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net472'">NET40;ML_Il2Cpp</DefineConstants>
+	
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+	
+	<DefineConstants Condition="'$(TargetFramework)' == 'net35'">NET35</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net40'">NET40</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net472'">NET40;ML_Il2Cpp</DefineConstants>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+	
+	<DefineConstants Condition="'$(TargetFramework)' == 'net35'">NET35</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net40'">NET40</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net472'">NET40;ML_Il2Cpp</DefineConstants>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\CrowdControl\CrowdControl.ML.csproj" />
+    <ProjectReference Include="..\MelonMod\MelonMod.csproj" />
+    <ProjectReference Include="..\TestEffectPack\TestEffectPack.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead_Data\Managed\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+	<Reference Include="MelonLoader, Version=0.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\MelonLoader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+	<Reference Include="UnityEngine">
+	  <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead_Data\Managed\UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEngine.CoreModule">
+	  <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEngine.PhysicsModule">
+	  <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEngine.TextRenderingModule">
+	  <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEngine.UI">
+	  <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead_Data\Managed\UnityEngine.UI.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+	
+	<ItemGroup Condition="'$(TargetFramework)' == 'net40'">
+		<Reference Include="UnityEngine">
+		  <HintPath>..\Libs\Mono\UnityEngine.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+	</ItemGroup>
+	
+	<ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+		<Reference Include="UnityEngine">
+		  <HintPath>..\Libs\Il2Cpp\UnityEngine.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+		  <HintPath>..\Libs\Il2Cpp\UnityEngine.CoreModule.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="UnhollowerBaseLib">
+		  <HintPath>..\Libs\Il2Cpp\UnhollowerBaseLib.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="Il2Cppmscorlib">
+		  <HintPath>..\Libs\Il2Cpp\Il2Cppmscorlib.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+	</ItemGroup>
+	
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command="copy &quot;C:\Users\Natalie\Desktop\Git Code\Unity-Cuphead\ML_CrowdControl-master\Project\Output\Debug\net35\UI.dll&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\Cuphead\CrowdControl\UI.dll&quot;" />
+	</Target>
+</Project>

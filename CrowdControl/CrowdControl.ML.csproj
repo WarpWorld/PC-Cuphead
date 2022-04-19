@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<TargetFrameworks>net35;net40;net472</TargetFrameworks>
+	<RootNamespace>WarpWorld.CrowdControl</RootNamespace>
+    <AssemblyName>CrowdControl</AssemblyName>
+	
+	<FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+	<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1637027-5608-418A-A88B-5A631A01E6BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <LangVersion>8.0</LangVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+	
+	<DefineConstants Condition="'$(TargetFramework)' == 'net35'">NET35</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net40'">NET40</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net472'">NET40;ML_Il2Cpp</DefineConstants>
+	
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+	
+	<DefineConstants Condition="'$(TargetFramework)' == 'net35'">NET35</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net40'">NET40</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net472'">NET40;ML_Il2Cpp</DefineConstants>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+	
+	<DefineConstants Condition="'$(TargetFramework)' == 'net35'">NET35</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net40'">NET40</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net472'">NET40;ML_Il2Cpp</DefineConstants>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Reference Include="MelonLoader">
+      <HintPath>..\Libs\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  
+	<ItemGroup Condition="'$(TargetFramework)' == 'net35'">
+		<PackageReference Include="TaskParallelLibrary" Version="1.0.2856" />
+		<PackageReference Include="AsyncBridge" Version="0.3.1" />
+		<Reference Include="UnityEngine">
+		  <HintPath>..\Libs\Mono\UnityEngine.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+	</ItemGroup>
+	
+	<ItemGroup Condition="'$(TargetFramework)' == 'net40'">
+		<PackageReference Include="AsyncBridge" Version="0.3.1" />
+		<Reference Include="UnityEngine">
+		  <HintPath>..\Libs\Mono\UnityEngine.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+	</ItemGroup>
+	
+	<ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+		<PackageReference Include="AsyncBridge" Version="0.3.1" />
+		<Reference Include="UnityEngine">
+		  <HintPath>..\Libs\Il2Cpp\UnityEngine.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+		  <HintPath>..\Libs\Il2Cpp\UnityEngine.CoreModule.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="UnhollowerBaseLib">
+		  <HintPath>..\Libs\Il2Cpp\UnhollowerBaseLib.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="Il2Cppmscorlib">
+		  <HintPath>..\Libs\Il2Cpp\Il2Cppmscorlib.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="Il2CppSystem">
+		  <HintPath>..\Libs\Il2Cpp\Il2CppSystem.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+		  <HintPath>..\Libs\Il2Cpp\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+		  <HintPath>..\Libs\Il2Cpp\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+		<Reference Include="MelonLoader, Version=0.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+		  <SpecificVersion>False</SpecificVersion>
+		  <HintPath>..\Libs\MelonLoader.dll</HintPath>
+		  <Private>False</Private>
+		</Reference>
+	</ItemGroup>
+</Project>
