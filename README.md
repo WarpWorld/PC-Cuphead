@@ -52,3 +52,5 @@ Discord - [WarpWorld](https://discord.warp.world)
 ## Acknowledgments
 
 * [dtothefourth](https://twitter.com/dtothefourth)
+* [LavaGang - Melonloader](https://github.com/LavaGang/MelonLoader)
+
