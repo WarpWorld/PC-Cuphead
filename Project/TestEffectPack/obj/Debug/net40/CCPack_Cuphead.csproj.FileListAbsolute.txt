@@ -1,0 +1,5 @@
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net40\CCPack_Cuphead.csproj.AssemblyReference.cache
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net40\TestEffectPack.Properties.Resources.resources
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net40\CCPack_Cuphead.csproj.GenerateResource.cache
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net40\CCPack_Cuphead.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net40\CCPack_Cuphead.csproj.CoreCompileInputs.cache

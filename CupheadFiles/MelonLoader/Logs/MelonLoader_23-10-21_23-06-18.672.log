@@ -1,0 +1,185 @@
+[23:06:18.677] ------------------------------
+[23:06:18.678] MelonLoader v0.5.4 Open-Beta
+[23:06:18.679] OS: Windows 10
+[23:06:18.680] Hash Code: 99102531024810154100579910097100505048995753975597975597101485351514856
+[23:06:18.680] ------------------------------
+[23:06:18.681] Game Type: Mono
+[23:06:18.681] Game Arch: x64
+[23:06:18.682] ------------------------------
+[23:06:18.683] Core::BasePath = C:\Program Files (x86)\Steam\steamapps\common\Cuphead
+[23:06:18.683] Game::BasePath = C:\Program Files (x86)\Steam\steamapps\common\Cuphead
+[23:06:18.711] Game::DataPath = C:\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead_Data
+[23:06:18.711] Game::ApplicationPath = C:\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead.exe
+
+[23:06:20.573] ------------------------------
+[23:06:20.574] Game Name: Cuphead
+[23:06:20.574] Game Developer: Studio MDHR
+[23:06:20.576] Unity Version: 2017.4.9f1
+[23:06:20.577] Game Version: 
+[23:06:20.577] ------------------------------
+[23:06:20.920] Preferences Loaded!
+[23:06:20.953] Loading Plugins...
+
+[23:06:20.960] ------------------------------
+[23:06:20.961] No Plugins Loaded!
+[23:06:20.962] ------------------------------
+
+
+
+[23:06:24.627] Loading Mods...
+
+[23:06:24.649] ------------------------------
+[23:06:24.649] 1 Mod Loaded
+[23:06:24.650] ------------------------------
+[23:06:24.651] ML_CrowdControl v1.2.0
+[23:06:24.651] by Herp Derpinstine
+[23:06:24.654] SHA256 Hash: 437dc65aed3da8bf21e92d156078b2b0d8ac0cf34e899662934488b3469c3b8b
+[23:06:24.657] ------------------------------
+[23:06:24.658] [ML_CrowdControl] Patching CrowdControl...
+[23:06:24.714] [ML_CrowdControl] Loading Config...
+[23:06:24.799] [ML_CrowdControl] Patching PlayerPrefs...
+[23:06:27.372] [ML_CrowdControl] Creating Root GameObject...
+[23:06:27.374] [ML_CrowdControl] Creating Manager...
+[23:06:27.389] [ML_CrowdControl] Setting GameKey to 
+[23:06:27.409] [ML_CrowdControl] Created Manager!
+[23:06:27.428] [ML_CrowdControl] Creating Effects GameObject...
+[23:06:27.430] [ML_CrowdControl] Loading Effects...
+[23:06:27.616] [CC] Registered Effect ID BlackAndWhite
+[23:06:27.618] [ML_CrowdControl] Registered TestEffectPack.BlackWhite : Set Filter to Black and White : BlackAndWhite
+[23:06:27.661] [CC] Registered Effect ID ShowBossHP
+[23:06:27.662] [ML_CrowdControl] Registered TestEffectPack.BossHP : Show Boss HP : ShowBossHP
+[23:06:27.663] [CC] Registered Effect ID ChargeDown
+[23:06:27.664] [ML_CrowdControl] Registered TestEffectPack.ChargeDown : Charge Down : ChargeDown
+[23:06:27.666] [CC] Registered Effect ID ChargeUp
+[23:06:27.667] [ML_CrowdControl] Registered TestEffectPack.ChargeUp : Charge Up : ChargeUp
+[23:06:27.668] [CC] Registered Effect ID Damage
+[23:06:27.669] [ML_CrowdControl] Registered TestEffectPack.Damage : Damage : Damage
+[23:06:27.671] [CC] Registered Effect ID DamageP2
+[23:06:27.672] [ML_CrowdControl] Registered TestEffectPack.Damage2 : Damage P2 : DamageP2
+[23:06:27.674] [CC] Registered Effect ID DamageBoss
+[23:06:27.675] [ML_CrowdControl] Registered TestEffectPack.DamageBoss : Damage Boss : DamageBoss
+[23:06:27.676] [CC] Registered Effect ID DamageDown
+[23:06:27.677] [ML_CrowdControl] Registered TestEffectPack.DamageDown : Damage Down : DamageDown
+[23:06:27.678] [CC] Registered Effect ID DamageUp
+[23:06:27.679] [ML_CrowdControl] Registered TestEffectPack.DamageUp : Increase Damage : DamageUp
+[23:06:27.680] [CC] Registered Effect ID DoubleJump
+[23:06:27.683] [ML_CrowdControl] Registered TestEffectPack.DoubleJump : Double Jump : DoubleJump
+[23:06:27.685] [CC] Registered Effect ID UnlimitedDashes
+[23:06:27.686] [ML_CrowdControl] Registered TestEffectPack.EndlessDash : Unlimited Dashes : UnlimitedDashes
+[23:06:27.687] [CC] Registered Effect ID FastWalk
+[23:06:27.688] [ML_CrowdControl] Registered TestEffectPack.FastWalk : Fast Walk : FastWalk
+[23:06:27.690] [CC] Registered Effect ID FastWalkP2
+[23:06:27.691] [ML_CrowdControl] Registered TestEffectPack.FastWalk2 : Fast Walk P2 : FastWalkP2
+[23:06:27.692] [CC] Registered Effect ID FlipScreen
+[23:06:27.693] [ML_CrowdControl] Registered TestEffectPack.FlipScreen : Flip Screen : FlipScreen
+[23:06:27.695] [CC] Registered Effect ID FreezePlayer
+[23:06:27.696] [ML_CrowdControl] Registered TestEffectPack.Freeze : Freeze Player : FreezePlayer
+[23:06:27.700] [CC] Registered Effect ID FreezePlayer2
+[23:06:27.701] [ML_CrowdControl] Registered TestEffectPack.Freeze2 : Freeze Player 2 : FreezePlayer2
+[23:06:27.702] [CC] Registered Effect ID GiantPlayer
+[23:06:27.703] [ML_CrowdControl] Registered TestEffectPack.Giant : Giant Player : GiantPlayer
+[23:06:27.705] [CC] Registered Effect ID GiantPlayer2
+[23:06:27.706] [ML_CrowdControl] Registered TestEffectPack.Giant2 : Giant Player 2 : GiantPlayer2
+[23:06:27.707] [CC] Registered Effect ID GiveCoin
+[23:06:27.708] [ML_CrowdControl] Registered TestEffectPack.GiveCoin : Give Coin : GiveCoin
+[23:06:27.709] [CC] GAME NAME: Cuphead
+[23:06:27.710] [CC] GAME KEY: Cuphead
+[23:06:27.711] [CC] Registered Effect ID Heal
+[23:06:27.712] [ML_CrowdControl] Registered TestEffectPack.Heal : Heal : Heal
+[23:06:27.715] [CC] Registered Effect ID HealP2
+[23:06:27.716] [ML_CrowdControl] Registered TestEffectPack.Heal2 : Heal P2 : HealP2
+[23:06:27.717] [CC] Registered Effect ID HealBoss
+[23:06:27.718] [ML_CrowdControl] Registered TestEffectPack.HealBoss : Heal Boss : HealBoss
+[23:06:27.720] [CC] Registered Effect ID HighJump
+[23:06:27.720] [ML_CrowdControl] Registered TestEffectPack.HighJump : High Jump : HighJump
+[23:06:27.723] [CC] Registered Effect ID HighJumpP2
+[23:06:27.724] [ML_CrowdControl] Registered TestEffectPack.HighJump2 : High Jump P2 : HighJumpP2
+[23:06:27.725] [CC] Registered Effect ID InvertControls
+[23:06:27.726] [ML_CrowdControl] Registered TestEffectPack.InvertControls : Invert Controls : InvertControls
+[23:06:27.727] [CC] Registered Effect ID Invulnerable
+[23:06:27.728] [ML_CrowdControl] Registered TestEffectPack.Invincible : Invulnerable : Invulnerable
+[23:06:27.731] [CC] Registered Effect ID Invisible
+[23:06:27.732] [ML_CrowdControl] Registered TestEffectPack.Invisible : Invisible : Invisible
+[23:06:27.733] [CC] Registered Effect ID KillPlayer
+[23:06:27.734] [ML_CrowdControl] Registered TestEffectPack.KillPlayer : Kill Player : KillPlayer
+[23:06:27.735] [CC] Registered Effect ID KillPlayer2
+[23:06:27.736] [ML_CrowdControl] Registered TestEffectPack.KillPlayer2 : Kill Player 2 : KillPlayer2
+[23:06:27.737] [CC] Registered Effect ID LongDash
+[23:06:27.739] [ML_CrowdControl] Registered TestEffectPack.LongDash : Long Dash : LongDash
+[23:06:27.741] [CC] Registered Effect ID LongDashP2
+[23:06:27.741] [ML_CrowdControl] Registered TestEffectPack.LongDash2 : Long Dash P2 : LongDashP2
+[23:06:27.743] [CC] Registered Effect ID LowJump
+[23:06:27.745] [ML_CrowdControl] Registered TestEffectPack.LowJump : Low Jump : LowJump
+[23:06:27.747] [CC] Registered Effect ID LowJumpP2
+[23:06:27.748] [ML_CrowdControl] Registered TestEffectPack.LowJump2 : Low Jump P2 : LowJumpP2
+[23:06:27.749] [CC] Registered Effect ID NoFilter
+[23:06:27.750] [ML_CrowdControl] Registered TestEffectPack.NoFilter : Set Filter to None : NoFilter
+[23:06:27.751] [CC] Registered Effect ID NoFire
+[23:06:27.752] [ML_CrowdControl] Registered TestEffectPack.NoFire : Disable Firing : NoFire
+[23:06:27.753] [CC] Registered Effect ID NoJump
+[23:06:27.754] [ML_CrowdControl] Registered TestEffectPack.NoJump : Disable Jump : NoJump
+[23:06:27.756] [CC] Registered Effect ID NoJump2
+[23:06:27.757] [ML_CrowdControl] Registered TestEffectPack.NoJump2 : Disable Jump P2 : NoJump2
+[23:06:27.759] [CC] Registered Effect ID NoParry
+[23:06:27.761] [ML_CrowdControl] Registered TestEffectPack.NoParry : Disable Parrying : NoParry
+[23:06:27.763] [CC] Registered Effect ID NoSwitch
+[23:06:27.764] [ML_CrowdControl] Registered TestEffectPack.NoSwitch : Disable Weapon Switch : NoSwitch
+[23:06:27.765] [CC] Registered Effect ID RandomWeapon
+[23:06:27.766] [ML_CrowdControl] Registered TestEffectPack.RandomWeap : Random Weapon : RandomWeapon
+[23:06:27.767] [CC] Registered Effect ID ShortDash
+[23:06:27.768] [ML_CrowdControl] Registered TestEffectPack.ShortDash : Short Dash : ShortDash
+[23:06:27.769] [CC] Registered Effect ID ShortDashP2
+[23:06:27.770] [ML_CrowdControl] Registered TestEffectPack.ShortDash2 : Short Dash P2 : ShortDashP2
+[23:06:27.772] [CC] Registered Effect ID SlowMotion
+[23:06:27.773] [ML_CrowdControl] Registered TestEffectPack.SlowMotion : Slow Motion : SlowMotion
+[23:06:27.775] [CC] Registered Effect ID SlowWalk
+[23:06:27.777] [ML_CrowdControl] Registered TestEffectPack.SlowWalk : Slow Walk : SlowWalk
+[23:06:27.779] [CC] Registered Effect ID SlowWalkP2
+[23:06:27.780] [ML_CrowdControl] Registered TestEffectPack.SlowWalk2 : Slow Walk P2 : SlowWalkP2
+[23:06:27.782] [CC] Registered Effect ID SpinScreen
+[23:06:27.782] [ML_CrowdControl] Registered TestEffectPack.SpinScreen : Spin Screen : SpinScreen
+[23:06:27.783] [CC] Registered Effect ID SwapCharacters
+[23:06:27.784] [ML_CrowdControl] Registered TestEffectPack.SwapChars : Swap Characters : SwapCharacters
+[23:06:27.785] [CC] Registered Effect ID TakeCoin
+[23:06:27.786] [ML_CrowdControl] Registered TestEffectPack.TakeCoin : Take Coin : TakeCoin
+[23:06:27.788] [CC] Registered Effect ID TinyPlayer
+[23:06:27.789] [ML_CrowdControl] Registered TestEffectPack.Tiny : Tiny Player : TinyPlayer
+[23:06:27.791] [CC] Registered Effect ID TinyPlayer2
+[23:06:27.792] [ML_CrowdControl] Registered TestEffectPack.Tiny2 : Tiny Player 2 : TinyPlayer2
+[23:06:27.795] [CC] Registered Effect ID Tutorial
+[23:06:27.796] [ML_CrowdControl] Registered TestEffectPack.Tutorial : Send to Tutorial : Tutorial
+[23:06:27.797] [CC] Registered Effect ID TwoStrip
+[23:06:27.798] [ML_CrowdControl] Registered TestEffectPack.TwoStrip : Set Filter to Two Strip : TwoStrip
+[23:06:27.799] [CC] Registered Effect ID UltraWeapon
+[23:06:27.800] [ML_CrowdControl] Registered TestEffectPack.UltraWeap : Ultra Weapon : UltraWeapon
+[23:06:27.801] [CC] Registered Effect ID UltraWeaponP2
+[23:06:27.802] [ML_CrowdControl] Registered TestEffectPack.UltraWeap2 : Ultra Weapon P2 : UltraWeaponP2
+[23:06:27.803] [CC] Registered Effect ID EquipChange
+[23:06:27.804] [ML_CrowdControl] Registered TestEffectPack.WeapCharge : Equip Charge : EquipChange
+[23:06:27.806] [CC] Registered Effect ID EquipChaser
+[23:06:27.807] [ML_CrowdControl] Registered TestEffectPack.WeapChaser : Equip Chaser : EquipChaser
+[23:06:27.810] [CC] Registered Effect ID EquipLobber
+[23:06:27.811] [ML_CrowdControl] Registered TestEffectPack.WeapLobber : Equip Lobber : EquipLobber
+[23:06:27.812] [CC] Registered Effect ID EquipPeashooter
+[23:06:27.813] [ML_CrowdControl] Registered TestEffectPack.WeapPeashooter : Equip Peashooter : EquipPeashooter
+[23:06:27.814] [CC] Registered Effect ID EquipRoundabout
+[23:06:27.814] [ML_CrowdControl] Registered TestEffectPack.WeapRound : Equip Roundabout : EquipRoundabout
+[23:06:27.815] [CC] Registered Effect ID EquipSpreadShot
+[23:06:27.816] [ML_CrowdControl] Registered TestEffectPack.WeapSpread : Equip Spread Shot : EquipSpreadShot
+[23:06:27.817] [CC] Registered Effect ID WinFight
+[23:06:27.818] [ML_CrowdControl] Registered TestEffectPack.WinFight : Win Fight : WinFight
+[23:06:27.820] [CC] Registered Effect ID ZoomOut
+[23:06:27.821] [ML_CrowdControl] Registered TestEffectPack.ZoomOut : Zoom Out : ZoomOut
+[23:06:28.051] [ML_CrowdControl] 62 Effects Loaded!
+[23:06:28.237] [ML_CrowdControl] Patched
+[23:06:28.254] [ML_CrowdControl] No UI Interface. Forcing Auto-Connect on Launch...
+[23:06:28.326] [ML_CrowdControl] Connecting...
+[23:06:28.398] [CC] CONNECTING SOCKET
+[23:06:32.608] [CC] Server socket closed.
+[23:06:32.610] [CC] 1006: An exception has occurred while connecting.
+[23:06:32.612] [ML_CrowdControl] Disconnected!
+[23:06:34.164] Preferences Saved!
+[23:06:34.724] [CC] Disconnect
+[23:06:34.727] [ML_CrowdControl] Disconnected!
+[23:06:34.728] [ML_CrowdControl] Connecting...
+[23:06:34.732] [CC] [WARNING] Dispose Stream

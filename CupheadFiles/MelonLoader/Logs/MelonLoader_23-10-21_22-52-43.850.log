@@ -1,0 +1,64 @@
+[22:52:44.006] ------------------------------
+[22:52:44.007] MelonLoader v0.5.4 Open-Beta
+[22:52:44.007] OS: Windows 10
+[22:52:44.008] Hash Code: 99102531024810154100579910097100505048995753975597975597101485351514856
+[22:52:44.009] ------------------------------
+[22:52:44.009] Game Type: Mono
+[22:52:44.010] Game Arch: x64
+[22:52:44.010] ------------------------------
+[22:52:44.011] Core::BasePath = C:\Program Files (x86)\Steam\steamapps\common\Cuphead
+[22:52:44.012] Game::BasePath = C:\Program Files (x86)\Steam\steamapps\common\Cuphead
+[22:52:44.023] Game::DataPath = C:\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead_Data
+[22:52:44.024] Game::ApplicationPath = C:\Program Files (x86)\Steam\steamapps\common\Cuphead\Cuphead.exe
+
+[22:53:17.485] ------------------------------
+[22:53:17.486] Game Name: Cuphead
+[22:53:17.487] Game Developer: Studio MDHR
+[22:53:17.489] Unity Version: 2017.4.9f1
+[22:53:17.490] Game Version: 
+[22:53:17.490] ------------------------------
+[22:53:18.515] Preferences Loaded!
+[22:53:18.669] Loading Plugins...
+
+[22:53:18.675] ------------------------------
+[22:53:18.676] No Plugins Loaded!
+[22:53:18.677] ------------------------------
+
+
+
+[22:53:25.681] Loading Mods...
+
+[22:53:28.176] ------------------------------
+[22:53:28.177] 1 Mod Loaded
+[22:53:28.178] ------------------------------
+[22:53:28.179] ML_CrowdControl v1.2.0
+[22:53:28.180] by Herp Derpinstine
+[22:53:28.185] SHA256 Hash: 437dc65aed3da8bf21e92d156078b2b0d8ac0cf34e899662934488b3469c3b8b
+[22:53:28.188] ------------------------------
+[22:53:28.190] [ML_CrowdControl] Patching CrowdControl...
+[22:53:28.580] [ML_CrowdControl] Loading Config...
+[22:53:28.822] [ML_CrowdControl] Patching PlayerPrefs...
+[22:53:32.582] [ML_CrowdControl] Creating Root GameObject...
+[22:53:32.585] [ML_CrowdControl] Creating Manager...
+[22:53:32.806] [ML_CrowdControl] Setting GameKey to 
+[22:53:32.808] [ML_CrowdControl] Created Manager!
+[22:53:32.814] [ML_CrowdControl] Creating Effects GameObject...
+[22:53:32.816] [ML_CrowdControl] Loading Effects...
+[22:53:33.385] [ML_CrowdControl] [ERROR] TestEffectPack.BlackWhite has no Name!
+[22:53:33.389] [ML_CrowdControl] [ERROR] TestEffectPack.BossHP has no Name!
+[22:53:33.392] [ML_CrowdControl] [ERROR] TestEffectPack.ChargeDown has no Name!
+[22:53:33.397] [ML_CrowdControl] [ERROR] TestEffectPack.ChargeUp has no Name!
+[22:53:33.401] [ML_CrowdControl] [ERROR] TestEffectPack.Damage has no Name!
+[22:53:33.405] [ML_CrowdControl] [ERROR] TestEffectPack.Damage2 has no Name!
+[22:53:33.409] [ML_CrowdControl] [ERROR] TestEffectPack.DamageBoss has no Name!
+[22:53:33.416] [ML_CrowdControl] [ERROR] System.Exception: ID cannot be empty!
+  at ML_CrowdControl.Effects.Data.MLCC_EffectData.set_ID (System.String value) [0x00000] in <filename unknown>:0 
+  at (wrapper managed-to-native) System.MonoCustomAttrs:GetCustomAttributesInternal (System.Reflection.ICustomAttributeProvider,System.Type,bool)
+  at System.MonoCustomAttrs.GetCustomAttributesBase (ICustomAttributeProvider obj, System.Type attributeType) [0x00000] in <filename unknown>:0 
+  at System.MonoCustomAttrs.GetCustomAttributes (ICustomAttributeProvider obj, System.Type attributeType, Boolean inherit) [0x00000] in <filename unknown>:0 
+  at System.MonoCustomAttrs.GetCustomAttributes (ICustomAttributeProvider obj, Boolean inherit) [0x00000] in <filename unknown>:0 
+  at System.MonoType.GetCustomAttributes (Boolean inherit) [0x00000] in <filename unknown>:0 
+  at ML_CrowdControl.MLCC_EffectsManager.LoadEffects () [0x00000] in <filename unknown>:0 
+  at ML_CrowdControl.ModCore.OnApplicationLateStart () [0x00000] in <filename unknown>:0 
+  at MelonLoader.MelonHandler+<>c.<OnApplicationLateStart_Mods>b__31_0 (MelonLoader.MelonMod x) [0x00000] in <filename unknown>:0 
+  at MelonLoader.MelonHandler.InvokeMelonMethod[MelonMod] (System.Collections.Generic.List`1& melons, MelonLoader.InvokeMelonMethodDelegate`1 method, Boolean remove_failed) [0x00000] in <filename unknown>:0 

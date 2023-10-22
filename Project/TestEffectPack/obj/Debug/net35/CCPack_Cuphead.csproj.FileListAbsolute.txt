@@ -1,0 +1,7 @@
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net35\CCPack_Cuphead.csproj.AssemblyReference.cache
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net35\TestEffectPack.Properties.Resources.resources
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net35\CCPack_Cuphead.csproj.GenerateResource.cache
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net35\CCPack_Cuphead.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net35\CCPack_Cuphead.csproj.CoreCompileInputs.cache
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net35\TestEffectPack.dll
+C:\Users\Adam\Desktop\CCPack-PC-Cuphead\Project\TestEffectPack\obj\Debug\net35\TestEffectPack.pdb

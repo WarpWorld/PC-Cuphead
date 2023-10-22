@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "oqSKfkX4nXJLSbdPZjzgIBznlMkIBgS+ESJPOGyVPOTsDy5QBsAOsXSGqoQmc72Ci8DiWMSpcx9rSabzvJHZwQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Adam\\Desktop\\PC-Cuphead\\Project\\TestUI\\TestUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Adam\\.nuget\\packages\\asyncbridge\\0.3.1\\asyncbridge.0.3.1.nupkg.sha512",
+    "C:\\Users\\Adam\\.nuget\\packages\\taskparallellibrary\\1.0.2856\\taskparallellibrary.1.0.2856.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\Users\\Adam\\Desktop\\PC-Cuphead\\Project\\MelonMod\\MelonMod.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\Users\\Adam\\Desktop\\PC-Cuphead\\Project\\MelonMod\\MelonMod.csproj",
+      "targetGraphs": [
+        ".NETFramework,Version=v3.5",
+        ".NETFramework,Version=v4.0",
+        ".NETFramework,Version=v4.7.2"
+      ]
+    }
+  ]
+}

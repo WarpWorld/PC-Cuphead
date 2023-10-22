@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Adam\\Desktop\\CCPack-PC-Cuphead\\Project\\TestEffectPack\\Cuphead.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Adam\\Desktop\\CCPack-PC-Cuphead\\Project\\TestEffectPack\\Cuphead.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Adam\\Desktop\\CCPack-PC-Cuphead\\Project\\TestEffectPack\\Cuphead.csproj",
+        "projectName": "TestEffectPack",
+        "projectPath": "C:\\Users\\Adam\\Desktop\\CCPack-PC-Cuphead\\Project\\TestEffectPack\\Cuphead.csproj",
+        "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Adam\\Desktop\\CCPack-PC-Cuphead\\Project\\TestEffectPack\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net35",
+          "net40"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {}
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net35": {
+          "targetAlias": "net35",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

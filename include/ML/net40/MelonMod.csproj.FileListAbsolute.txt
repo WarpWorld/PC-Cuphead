@@ -1,0 +1,8 @@
+C:\Users\Adam\Desktop\NewRepo\ML_CrowdControl\Output\Debug\net40\ML.CC.xml
+C:\Users\Adam\Desktop\NewRepo\ML_CrowdControl\Output\Debug\net40\ML.CC.dll
+C:\Users\Adam\Desktop\NewRepo\ML_CrowdControl\Output\Debug\net40\ML.CC.pdb
+C:\Users\Adam\Desktop\NewRepo\ML_CrowdControl\MelonMod\obj\Debug\net40\MelonMod.csprojAssemblyReference.cache
+C:\Users\Adam\Desktop\NewRepo\ML_CrowdControl\MelonMod\obj\Debug\net40\MelonMod.csproj.CoreCompileInputs.cache
+C:\Users\Adam\Desktop\NewRepo\ML_CrowdControl\MelonMod\obj\Debug\net40\MelonMod.csproj.CopyComplete
+C:\Users\Adam\Desktop\NewRepo\ML_CrowdControl\MelonMod\obj\Debug\net40\ML.CC.dll
+C:\Users\Adam\Desktop\NewRepo\ML_CrowdControl\MelonMod\obj\Debug\net40\ML.CC.pdb

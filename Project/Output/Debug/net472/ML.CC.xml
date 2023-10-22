@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ML.CC</name>
+    </assembly>
+    <members>
+        <member name="T:ML_CrowdControl.Effects.Data.MLCC_BidWarEffectData">
+            <summary>Effect data attribute for bid war effects.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.Data.MLCC_BidWarEffectData.BidFor">
+            <summary>Name of what the user is bidding towards.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.Data.MLCC_BidWarEffectData.Cost">
+            <summary>
+            How many coins will be bid towards.
+            Must be a uint value greater than 0
+            </summary>
+        </member>
+        <member name="T:ML_CrowdControl.Effects.Data.MLCC_EffectData">
+            <summary>Effect data attribute for single-trigger effects with no extra properties.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.ID">
+            <summary>
+            Unique identifier of the effect.
+            Must be a value greator than 0.
+            Can't be set during Runtime.
+            </summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.Name">
+            <summary>
+            Name of the effect displayed to the users.
+            Can't be null or Empty.
+            </summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.Description">
+            <summary>Description of the effect, displayed in the extension.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.MaxRetries">
+            <summary>
+            Number of retries before the effect instance fails.
+            Must be an int value between 0 - 60
+            </summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.RetryDelay">
+            <summary>
+            Delay in seconds before retrying to trigger an effect instance.
+            Must be a float value between 0 - 10
+            </summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.PendingDelay">
+            <summary>
+            Delay in seconds to wait before triggering the next effect instance.
+            Must be a float value between 0 - 10
+            </summary>
+        </member>
+        <member name="T:ML_CrowdControl.Effects.Data.MLCC_ParamEffectData">
+            <summary>Effect data attribute for effects that handle parameters.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.Data.MLCC_ParamEffectData.Parameters">
+            <summary>
+            Parameters this Effect has.
+            All Parameters are converted to boxed string objects upon set.
+            </summary>
+        </member>
+        <member name="T:ML_CrowdControl.Effects.Data.MLCC_TimedEffectData">
+            <summary>Effect data attribute for effects that are active for a given duration of time.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.Data.MLCC_TimedEffectData.Duration">
+            <summary>
+            Duration in seconds before the effect is automatically ended.
+            Must be a float value between 1 - 600
+            </summary>
+        </member>
+        <member name="T:ML_CrowdControl.Effects.MLCC_BidWarEffect">
+            <summary>Base class for bid war effects.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.MLCC_BidWarEffect.DataAttribute">
+            <summary>Attribute that Defined the Effect's Data.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.MLCC_BidWarEffect.Wrapper">
+            <summary>Wrapper for CrowdControl's Component.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_BidWarEffect.OnTrigger(WarpWorld.CrowdControl.CCEffectInstance)">
+            <summary>
+            Called when an effect instance is scheduled for execution. The returned value is communicated back to the server.
+            <para>If <see cref="F:WarpWorld.CrowdControl.EffectResult.Retry"/> is returned, will be called again in <see cref="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.RetryDelay"/> seconds,
+            unless <see cref="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.MaxRetries"/> is reached.</para>
+            </summary>
+        </member>
+        <member name="T:ML_CrowdControl.Effects.MLCC_Effect">
+            <summary>Base class for effects with no extra properties.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.MLCC_Effect.DataAttribute">
+            <summary>Attribute that Defined the Effect's Data.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.MLCC_Effect.Wrapper">
+            <summary>Wrapper for CrowdControl's Component.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_Effect.OnTrigger(WarpWorld.CrowdControl.CCEffectInstance)">
+            <summary>
+            Called when an effect instance is scheduled for execution. The returned value is communicated back to the server.
+            <para>If <see cref="F:WarpWorld.CrowdControl.EffectResult.Retry"/> is returned, will be called again in <see cref="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.RetryDelay"/> seconds,
+            unless <see cref="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.MaxRetries"/> is reached.</para>
+            </summary>
+        </member>
+        <member name="T:ML_CrowdControl.Effects.MLCC_EffectBase">
+            <summary>
+            Base class of All Effects.
+            NEVER TOUCH THIS CLASS DIRECTLY!
+            Always use the appropriate Effect Base Subclass to inherit from.
+            </summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.MLCC_EffectBase.Logger">
+            <summary>MelonLogger Instance for the effect.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.OnLoad">
+            <summary>Invoked when an effect is loaded and registered.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.OnUpdate">
+            <summary>
+            Invoked when MonoBehaviour.Update is called.
+            Called once every frame regardless of state of effect.
+            </summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.OnConnecting">
+            <summary>Invoked when attempting a connection to the Crowd Control server.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.OnConnectionError(System.Net.Sockets.SocketError)">
+            <summary>Invoked when the connection to the Crowd Control server has failed.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.OnConnected">
+            <summary>Invoked when successfully connected to the Crowd Control server.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.OnAuthenticated">
+            <summary>Invoked when the Authentication Token has been Authorized and Confirmed by the Crowd Control server.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.OnAuthenticationFailed">
+            <summary>Invoked when Authentication with the Crowd Control server fails.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.OnDisconnected">
+            <summary>Invoked when disconnected from the Crowd Control server.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.OnMessage(System.String)">
+            <summary>Invoked when a message is received from the Crowd Control server or api.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.ToggleSellable(System.Boolean)">
+            <summary>Toggles whether this effect can currently be sold during this session.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_EffectBase.ToggleVisible(System.Boolean)">
+            <summary>Toggles whether this effect is visible in the menu during this session.</summary>
+        </member>
+        <member name="T:ML_CrowdControl.Effects.MLCC_ParamEffect">
+            <summary>Base class for effects that handles parameters.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.MLCC_ParamEffect.DataAttribute">
+            <summary>Attribute that Defined the Effect's Data.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.MLCC_ParamEffect.Wrapper">
+            <summary>Wrapper for CrowdControl's Component.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_ParamEffect.AddParameters(System.Object[])">
+            <summary>Function for dynamically adding object(s) to the parameter list.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_ParamEffect.ClearParameters">
+            <summary>Clearing the established parameter list.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_ParamEffect.GetParameters">
+            <summary>Parameters this Effect has.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_ParamEffect.OnAssignParameters(System.String[])">
+            <summary>Used for processing the newly received parameter array. Can be overridden by a derived class.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_ParamEffect.OnTrigger(WarpWorld.CrowdControl.CCEffectInstance)">
+            <summary>
+            Called when an effect instance is scheduled for execution. The returned value is communicated back to the server.
+            <para>If <see cref="F:WarpWorld.CrowdControl.EffectResult.Retry"/> is returned, will be called again in <see cref="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.RetryDelay"/> seconds,
+            unless <see cref="P:ML_CrowdControl.Effects.Data.MLCC_EffectData.MaxRetries"/> is reached.</para>
+            </summary>
+        </member>
+        <member name="T:ML_CrowdControl.Effects.MLCC_TimedEffect">
+            <summary>Base class for effects that are active for a given duration of time.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.MLCC_TimedEffect.DataAttribute">
+            <summary>Attribute that Defined the Effect's Data.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.Effects.MLCC_TimedEffect.Wrapper">
+            <summary>Wrapper for CrowdControl's Component.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_TimedEffect.IsPaused">
+            <summary>Is the timer paused?</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_TimedEffect.OnPause">
+            <summary>Invoked when an effect instance is paused.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_TimedEffect.OnReset">
+            <summary>Invoked when an effect instance is reset.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_TimedEffect.OnResume">
+            <summary>Invoked when an effect instance is resumed.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_TimedEffect.OnStart(WarpWorld.CrowdControl.CCEffectInstance)">
+            <summary>Invoked when an effect instance is scheduled to start. The effect should only be applied when <see cref="F:WarpWorld.CrowdControl.EffectResult.Success"/> is returned.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_TimedEffect.OnStop(WarpWorld.CrowdControl.CCEffectInstance,System.Boolean)">
+            <summary>
+            Invoked when an effect instance is scheduled to stop after its time is expired.
+            Return false if the effect cannot be stopped at the current time to retry in <see cref="F:WarpWorld.CrowdControl.CCEffectBase.retryDelay"/>
+            seconds.
+            </summary>
+            <param name="effectInstance">The target instance.</param>
+            <param name="force">Set to true when called from <see cref="M:WarpWorld.CrowdControl.CrowdControl.StopAllEffects"/>,
+            in which case failure to stop the effect is ignored.</param>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_TimedEffect.ShouldRun">
+            <summary>Conditions to be ran.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_TimedEffect.Resume">
+            <summary>Invoked when the behaviour is resumed.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_TimedEffect.Pause">
+            <summary>Invoked when the behaviour is paused.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.Effects.MLCC_TimedEffect.Reset">
+            <summary>Invoked when the behaviour is reset.</summary>
+        </member>
+        <member name="T:ML_CrowdControl.MLCC_Config">
+            <summary>Class for Mod Config.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.MLCC_Config.GeneralCategory">
+            <summary>General Category of the Config.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.MLCC_Config.Debug">
+            <summary>Toggle for Debug Logs.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.MLCC_Config.AutoConnect">
+            <summary>Toggle for Auto-Connecting on Launch.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.MLCC_Config.ReconnectRetries">
+            <summary>How many times to attempt reconnecting? (-1 for unlimited  |  0 to disable reconnecting)</summary>
+        </member>
+        <member name="P:ML_CrowdControl.MLCC_Config.DelayBetweenEffects">
+            <summary>Time to wait after triggering an effect before attempting to trigger another.</summary>
+        </member>
+        <member name="T:ML_CrowdControl.MLCC_EffectsManager">
+            <summary>Effects Manager for the Mod.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.MLCC_EffectsManager.Effects">
+            <summary>Array of all loaded effects casted as MLCC_EffectBase.</summary>
+        </member>
+        <member name="T:ML_CrowdControl.MLCC_UI">
+            <summary>Base class for UI Interfaces.</summary>
+        </member>
+        <member name="P:ML_CrowdControl.MLCC_UI.Logger">
+            <summary>MelonLogger Instance for the effect.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnLoad">
+            <summary>Invoked when the UI Interface is loaded and registered.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnUpdate">
+            <summary>
+            Invoked when MonoBehaviour.Update is called.
+            Called once every frame.
+            </summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnGUI">
+            <summary>
+            Invoked when MonoBehaviour.OnGUI is called.
+            Called once every frame.
+            </summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnConnecting">
+            <summary>Invoked when attempting a connection to the Crowd Control server.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnConnectionError(System.Net.Sockets.SocketError)">
+            <summary>Invoked when the connection to the Crowd Control server has failed.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnConnected">
+            <summary>Invoked when successfully connected to the Crowd Control server.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnAuthenticated">
+            <summary>Invoked when the Authentication Token has been Authorized and Confirmed by the Crowd Control server.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnAuthenticationFailed">
+            <summary>Invoked when Authentication with the Crowd Control server fails.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnAuthenticationPrompt(System.Boolean)">
+            <summary>
+            Invoked when Showing or Hiding the User Input Prompt for their Activation Code.
+            If Overriden the Console Prompt will not be shown.
+            </summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnDisconnected">
+            <summary>Invoked when disconnected from the Crowd Control server.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.OnMessage(System.String)">
+            <summary>Invoked when a message is received from the Crowd Control server or api.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.DeauthorizeUser">
+            <summary>Wipes the currently set Authentication Token and Deauthenticates the Current User.</summary>
+        </member>
+        <member name="M:ML_CrowdControl.MLCC_UI.DeauthorizeUser(System.Boolean)">
+            <summary>Wipes the currently set Authentication Token and Deauthenticates the Current User.</summary>
+        </member>
+        <member name="T:ML_CrowdControl.Wrappers.MLCC_BidWarEffectWrapper">
+            <summary>Unity Component Wrapper for MLCC_BidWarEffect.</summary>
+        </member>
+        <member name="T:ML_CrowdControl.Wrappers.MLCC_EffectWrapper">
+            <summary>Unity Component Wrapper for MLCC_Effect.</summary>
+        </member>
+        <member name="T:ML_CrowdControl.Wrappers.MLCC_ParamEffectWrapper">
+            <summary>Unity Component Wrapper for MLCC_ParamEffect.</summary>
+        </member>
+        <member name="T:ML_CrowdControl.Wrappers.MLCC_TimedEffectWrapper">
+            <summary>Unity Component Wrapper for MLCC_TimedEffect.</summary>
+        </member>
+        <member name="T:ML_CrowdControl.Wrappers.MLCC_UIWrapper">
+            <summary>Unity Component Wrapper for MLCC_UI</summary>
+        </member>
+    </members>
+</doc>
